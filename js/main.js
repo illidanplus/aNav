@@ -100,12 +100,7 @@ $(function() {
                 link: 'https://www.wikifeetx.com/',
                 box_shadow: '#D7191A',
                 icon: 'img/bt.png',
-            }, {
-                name: '小众软件',
-                link: 'https://www.appinn.com/',
-                box_shadow: '#3279ea',
-                icon: 'img/xiaozhong.png',
-            },]
+            }]
         }
         for (var i = 0; i < bookmark.data.length; i++) {
             if (bookmark.data[i].name == 'Via插件') {
