@@ -75,92 +75,37 @@ function rgb2hex(rgb) {
 // 添加书签
 $(function() {
         var bookmark = {
-            data: [{
-                name: '开发日志',
-                link: 'https://kksan.top/f5404b68deeb4634b39dac0bc67ec693',
-                box_shadow: '#F18033',
-                icon: 'img/log.png',
-            }, {
-                name: '酷安',
-                link: 'https://www.coolapk.com',
-                box_shadow: '#11B063',
-                icon: 'img/coolapk.png',
-            }, {
+            data:[{
                 name: 'Via插件',
-                link: 'http://via-app.cn',
+                link: 'https://tool.whgpc.com/Tools/viaPLUG/#/tabBar/plugin',
                 box_shadow: '#FA7199',
                 icon: 'img/via.png',
-            }, {
-                name: '今日热榜',
-                link: 'https://tophub.today/',
-                box_shadow: '#F2584A',
-                icon: 'img/headline.png',
-            }, {
-                name: '知乎',
-                link: 'https://www.zhihu.com/',
-                box_shadow: '#0078D8',
-                icon: 'img/zhihulogo.png',
-            }, {
-                name: '小米商城',
-                link: 'https://m.mi.com/',
-                box_shadow: '#F57923',
-                icon: 'img/mi.png',
-            }, {
-                name: 'unsplash',
-                link: 'https://unsplash.com/',
+            },{
+                name: '163邮箱',
+                link: 'https://mail.163.com/',
                 box_shadow: '#2C2C2C',
-                icon: 'img/unsplash.png',
-            }, {
-                name: '豆瓣',
-                link: 'https://m.douban.com/',
-                box_shadow: '#37bf4c',
-                icon: 'img/douban.png',
-            }, {
-                name: '虎扑',
-                link: 'https://www.hupu.com/',
-                box_shadow: '#c01d2f',
-                icon: 'img/hupu.png',
-            }, {
-                name: '斗鱼',
-                link: 'https://www.douyu.com/',
-                box_shadow: '#fe7700',
-                icon: 'img/douyu.png',
-            }, {
-                name: 'CSDN',
-                link: 'https://www.csdn.net/',
+                icon: 'img/mail.png',
+            },{
+                name: '麻豆盘',
+                link: 'http://3mo.net:2048/',
                 box_shadow: '#c5000a',
-                icon: 'img/csdn.png',
+                icon: 'img/girl.png',
             }, {
-                name: 'XDA',
-                link: 'https://www.xda-developers.com/',
+                name: '特珞',
+                link: 'https://trow.cc/',
                 box_shadow: '#AC6E2F',
-                icon: 'img/xda.png',
+                icon: 'img/trow.jpg',
             }, {
-                name: '少数派',
-                link: 'https://sspai.com/',
+                name: '某百科',
+                link: 'https://www.wikifeetx.com/',
                 box_shadow: '#D7191A',
-                icon: 'img/sspai.png',
+                icon: 'img/bt.png',
             }, {
                 name: '小众软件',
                 link: 'https://www.appinn.com/',
                 box_shadow: '#3279ea',
                 icon: 'img/xiaozhong.png',
-            }, {
-                name: '数字尾巴',
-                link: 'https://www.dgtle.com/',
-                box_shadow: '#62677b',
-                icon: 'img/shuziweiba.png',
-            }, {
-                name: '疫情跟踪',
-                link: 'https://app.21jingji.com/html/2020yiqing/',
-                box_shadow: '#7C5DC7',
-                icon: 'img/ding.png',
-            }, {
-                name: '疫情辟谣',
-                link: 'https://vp.fact.qq.com/home',
-                box_shadow: '#00A0E9',
-                icon: 'img/true.png',
-            }]
+            },]
         }
         for (var i = 0; i < bookmark.data.length; i++) {
             if (bookmark.data[i].name == 'Via插件') {
@@ -184,13 +129,6 @@ $(function() {
             color: '#3245df',
             placeholder: '百度一下...'
         }, {
-            name: 'google',
-            icon: 'img/google-xs.png',
-            searchlink: 'https://www.google.com/search',
-            searchname: 'q',
-            color: '#4285f4',
-            placeholder: '咕噜咕噜...'
-        }, {
             name: 'bing',
             icon: 'img/bing-xs.png',
             searchlink: 'https://cn.bing.com/search',
@@ -198,54 +136,12 @@ $(function() {
             color: '#00868B',
             placeholder: 'Bing搜索...'
         }, {
-            name: 'yahoo',
-            icon: 'img/yahoo-xs.png',
-            searchlink: 'https://search.yahoo.com/search',
-            searchname: 'p',
-            color: '#5f01d1',
-            placeholder: 'Yahoo~'
-        }, {
-            name: 'magi',
-            icon: 'img/magi-xs.png',
-            searchlink: 'https://magi.com/search',
-            searchname: 'q',
-            color: 'black',
-            placeholder: 'Mag[i]...'
-        }, {
             name: 'sougou',
             icon: 'img/sougou-xs.png',
             searchlink: 'https://www.sogou.com/web',
             searchname: 'query',
             color: '#f94c18',
             placeholder: '搜狗搜索...'
-        }, {
-            name: 'wechat',
-            icon: 'img/wechat-xs.png',
-            searchlink: 'https://weixin.sogou.com/weixin',
-            searchname: 'query',
-            color: '#2ca43a',
-            placeholder: '搜微信文章...'
-        }, {
-            name: 'quark',
-            icon: 'img/quark-xs.png',
-            searchlink: 'https://quark.sm.cn/s',
-            searchname: 'q',
-            color: '#6182f6',
-            placeholder: '夸克搜索...'
-        }, {
-            name: 'taobao',
-            icon: 'img/taobao-xs.png',
-            searchlink: 'https://s.taobao.com/search',
-            searchname: 'q',
-            color: '#FF5B00',
-            placeholder: '淘，我喜欢...'
-        }, {
-            name: 'jingdong',
-            icon: 'img/jingdong-xs.png',
-            searchlink: 'https://search.jd.com/Search',
-            searchname: 'keyword',
-            color: '#F30213',
-            placeholder: '多，快，好，省...'
         }, {
             name: 'bilibili',
             icon: 'img/bilibili-xs.png',
@@ -260,34 +156,6 @@ $(function() {
             searchname: 'q',
             color: '#24292e',
             placeholder: '全球最大的开源社区...'
-        }, {
-            name: 'toutiao',
-            icon: 'img/toutiao-xs.png',
-            searchlink: 'https://m.toutiao.com/search',
-            searchname: 'keyword',
-            color: '#ed2f28',
-            placeholder: '搜今日头条...'
-        }, {
-            name: 'weibo',
-            icon: 'img/weibo-xs.png',
-            searchlink: 'https://s.weibo.com/weibo',
-            searchname: 'q',
-            color: '#e6162d',
-            placeholder: '搜微博...'
-        }, {
-            name: 'zhihu',
-            icon: 'img/zhihu-xs.png',
-            searchlink: 'https://www.zhihu.com/search',
-            searchname: 'q',
-            color: '#1087eb',
-            placeholder: '我们都是有问题的人...'
-        }, {
-            name: 'kuaidi',
-            icon: 'img/kuaidi-xs.png',
-            searchlink: 'https://m.kuaidi100.com/result.jsp',
-            searchname: 'nu',
-            color: '#317EE7',
-            placeholder: '搜快递...'
         }]
     }
     for (var i = 0; i < search.data.length; i++) { //添加搜索按钮
